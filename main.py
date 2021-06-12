@@ -15,8 +15,8 @@ def predict():
     output = round(predictions[0],2)
     return render_template('bas1.html' , prediction_text = f"Employee Salary will be $ {output}")
 
-
-app.run(debug = True)     
+if __name__ == '__main__':
+    app.run(debug = True)     
 # debug will keep on updating in server, any new 
 # function added will immediately updated
 #  in DeprecationWarning
